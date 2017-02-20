@@ -1,8 +1,18 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #F5F5F5;
+	background-color: blue;
+	animation: colorchange 25s;
+	-webkit-animation: colorchange 50s;
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+@keyframes colorchange
+{
+	0% {background: blue;}
+	25%  {background: white;}
+    50%  {background: blue;}
+    75%  {background: white;}
+    100% {background: blue;}
 }
 
 .nav {
